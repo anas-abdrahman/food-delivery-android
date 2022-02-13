@@ -7,7 +7,7 @@
   </a>
 </p>
 
-## food-order-and-delivery
+## Food order and delivery
 restaurant Food Ordering, Restaurant Management and Delivery Application
 
 Please feel free to create issues, or fork and pull request - this project should receive much more love than I can give it.
@@ -20,18 +20,21 @@ Please feel free to create issues, or fork and pull request - this project shoul
 - google map
 
 ## Screenshot
-<p align="center">
+<p>
+  customer
+  <br>
   <img height="400" src="https://play-lh.googleusercontent.com/119MpGMal5UcDIFWqzYmonfrcd1wLc5UU8PLXVCbxkOJ6creI0US5h7UYR8TmbpsB9E=w1918-h893-rw">
   <img height="400" src="https://play-lh.googleusercontent.com/N_NbCCEthX_uVUnQ05WOormvZ5kuayzXQd6RFDAyovk0RuHOUEqSvA7GpU6EvYaxV5A=w1918-h893-rw">
   <img height="400" src="https://play-lh.googleusercontent.com/6w40onH7zjxtHXpw9qF2EdtJt0rA4qSDjtnBwsysK4EZG5KOTZ7zBfGyyumkL3Ch0qo=w1918-h893-rw">
-
   <img height="400" src="https://play-lh.googleusercontent.com/JyzcryhoFsHaDlzCy5578_99nQngDc230cou1KPHvAHDaHvdg0tPahirlBEd9N0ksNc=w1918-h893-rw">
-  <img height="400" src="https://play-lh.googleusercontent.com/CdJxmYfKPylZP1bVixT_rIGQ1cZQ1E_FnV2-tcDiwPP_oo4YiTLewUDGxRLZX9Cc_Zc=w1918-h893-rw">
+</p>
+<p>
+  Restaurant
+  <br>
   <img height="400" src="https://play-lh.googleusercontent.com/YXp65LyxCZFZ3YBC04I2mDRgVPFZ1-DlJfVlC_PP-4GSGxw-9vXdr_ijROSTAnmefvA=w1918-h893-rw">
-
   <img height="400" src="https://play-lh.googleusercontent.com/3bw-YBCVj8J8ZmoliUdpgAGJq0hQtoulGNGPAwWckuoCINCuCmBNdFSWngZltLTHTPk=w1918-h893-rw">
   <img height="400" src="https://play-lh.googleusercontent.com/cjh_pLkveuTeZrlvcLh8zs-kjykSs1GZM0dOz73T9mUqCnbCXEATLkN-0KfLqifwBTE=w1918-h893-rw">
-  <img height="400" src="https://play-lh.googleusercontent.com/kYJceNhG0GeKvE8IZ6xJe53M-Q89oCYpzY3aP0KYP7bQEqgf0YRbwyPSJ8R__Q5rxQFK=w1918-h893-rw">
+  <img height="400" src="https://play-lh.googleusercontent.com/CdJxmYfKPylZP1bVixT_rIGQ1cZQ1E_FnV2-tcDiwPP_oo4YiTLewUDGxRLZX9Cc_Zc=w1918-h893-rw">
 </p>
 
 ## Link on Google Play
@@ -39,8 +42,8 @@ Please feel free to create issues, or fork and pull request - this project shoul
    <img src="https://lh3.googleusercontent.com/cjsqrWQKJQp9RFO7-hJ9AfpKzbUb_Y84vXfjlP0iRHBvladwAfXih984olktDhPnFqyZ0nu9A5jvFwOEQPXzv7hr3ce3QVsLN8kQ2Ao=s0">
 </p>
 
-Customer
+Customer : 
 https://play.google.com/store/apps/details?id=com.kukus.customer
 
-Resturant
+Restaurant : 
 https://play.google.com/store/apps/details?id=com.kukus.administrator
