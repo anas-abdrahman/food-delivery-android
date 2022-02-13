@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">kukus cairo</string>
+    <string name="title_activity_activtity_order_map">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_location_set">Map</string>
+
+
+    <string name="permission_rationale">Please grant location permission to start the service</string>
+    <string name="permission_denied_explanation">You have not granted location permission. So the service cannot be started.</string>
+    <string name="settings">settings</string>
+    <string name="title_alert_no_intenet">No internet</string>
+    <string name="msg_alert_no_internet">Please make sure that you have active internet connection.</string>
+    <string name="no_google_playservice_available">No Google Playservice found. Please install it.</string>
+    <string name="msg_location_service_not_started">Location Tracking Not Started</string>
+    <string name="msg_location_service_started">Location Tracking Started</string>
+    <string name="btn_label_refresh">Refresh</string>
+
+    <!-- Activiry Login -->
+    <string name="enter_number_phone">Enter Number Phone</string>
+    <string name="confirm">Confirm</string>
+    <string name="by_continuing_you_agree_to_our">By continuing, you agree to our</string>
+    <string name="terms_amp_conditions"><![CDATA[TERMS & CONDITIONS]]></string>
+
+
+    <string name="com_lamudi_phonefield_edittext">phone_edit_text</string>
+    <string name="com_lamudi_phonefield_flag_spinner">flag_spinner</string>
+    <string name="com_lamudi_phonefield_til_phone">til_phone</string>
+    <string name="title_activity_dashbord">ActivityDashbord</string>
+
+</resources>

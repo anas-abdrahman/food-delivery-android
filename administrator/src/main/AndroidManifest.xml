@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kukus.administrator">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".login.ActivityLogin"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".news.ActivityNews" />
+        <activity android:name=".news.ActivityAddNews" />
+        <activity android:name=".news.ActivityEditNews" />
+        <activity android:name=".setting.ActivitySetting" />
+        <activity android:name=".setting.printer.ActivityPrinter" />
+        <activity android:name=".setting.time.ActivityTime" />
+        <activity android:name=".staff.ActivityEditStaff" />
+        <activity android:name=".statistic.ActivityStatistic" />
+        <activity android:name=".statistic.ActivityStatisticNew" />
+        <activity android:name=".voucher.ActivityVoucher" />
+        <activity android:name=".promo.ActivityPromo" />
+        <activity android:name=".message.ActivityMessage" />
+        <activity android:name=".wallet.ActivityWallet" />
+        <activity android:name=".waiter.ActivityWaiter" />
+        <activity android:name=".waiter.ActivityAddOrder" />
+        <activity android:name=".staff.ActivityAddStaff" />
+        <activity android:name=".staff.ActivityStaff" />
+        <activity android:name=".order.ActivityDetails" />
+        <activity android:name=".order.ActivityOrders" />
+        <activity android:name=".delivery.ActivityOrderMap" />
+        <activity android:name=".delivery.ActivityTracking" />
+        <activity android:name=".delivery.ActivityDelivery" />
+        <activity android:name=".orderWaiter.ActivityOrdersWaiter" />
+        <activity android:name=".menu.ActivityFormMenu" />
+        <activity android:name=".menu.ActivityFormDrink" />
+        <activity android:name=".menu.ActivityMenu" />
+        <activity android:name=".user.ActivityUser" />
+        <activity android:name=".user.ActivityUserList" />
+        <activity android:name=".history.ActivityHistory" />
+        <activity android:name=".dashboard.ActivityDashboard" />
+        <activity android:name=".dashboard.DashboardAdmin" />
+        <activity android:name=".dashboard.DashboardDelivery" />
+        <activity android:name=".dashboard.DashboardWaiter" />
+        <activity android:name=".dashboard.DashboardCashier" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDjsQk8fdU9fO5W_jrwVHYUOl4nxAFE2m4" />
+
+        <service android:name=".service.AdminService" />
+        <service android:name=".service.DeliveryOrderService" />
+
+    </application>
+
+</manifest>

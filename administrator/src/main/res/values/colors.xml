@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ef554a</color>
+    <color name="colorPrimaryDark">#CA463C</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="colorRed">#ef554a</color>
+    <color name="colorGreen">#32c360</color>
+    <color name="colorGrey">#eeeeee</color>
+    <color name="colorGreyNew">#e8ebf2</color>
+    <color name="colorBlue">#2E87E6</color>
+
+
+
+    <color name="color9">#999999</color>
+    <color name="color8">#888888</color>
+    <color name="color7">#777777</color>
+    <color name="color6">#666666</color>
+    <color name="color5">#555555</color>
+    <color name="color4">#444444</color>
+    <color name="color2">#444444</color>
+
+    <color name="colorA">#aaaaaa</color>
+    <color name="colorB">#bbbbbb</color>
+    <color name="colorC">#cccccc</color>
+    <color name="colorD">#dddddd</color>
+    <color name="colorE">#eeeeee</color>
+    <color name="colorF">#ffffff</color>
+
+    <color name="blue">#2196F3</color>
+    <color name="blue1">#78BBF3</color>
+    <color name="yellow">#FFC107</color>
+
+
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="pf_grey">#262626</color>
+    <color name="pf_grey_light">#999999</color>
+    <color name="pf_white">#ffffff</color>
+
+
+    <color name="yellow0">#E9BD3B</color>
+    <color name="yellow1">#FFDA00</color>
+    <color name="yellow2">#FF9800</color>
+
+</resources>

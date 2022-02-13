@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_radius_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/label_order_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="ORDER ID :"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_order_id"
+            app:layout_constraintStart_toEndOf="@+id/iv_delete"
+            app:layout_constraintTop_toTopOf="@+id/txt_order_id" />
+
+        <TextView
+            android:id="@+id/txt_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_radius_grey_3"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="----------"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/label_order_id"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text=" -- "
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_order_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_order_id" />
+
+        <View
+            android:id="@+id/divider_0"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorE"
+            app:layout_constraintEnd_toEndOf="@+id/img_map"
+            app:layout_constraintStart_toStartOf="@+id/img_map"
+            app:layout_constraintTop_toBottomOf="@+id/txt_order_id" />
+
+        <TextView
+            android:id="@+id/txt_order_counter"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@drawable/ic_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/divider_1"
+            app:layout_constraintEnd_toEndOf="@+id/divider_0"
+            app:layout_constraintTop_toTopOf="@+id/divider_1" />
+
+        <TextView
+            android:id="@+id/txt_order_accept"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:background="@drawable/ic_check_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/divider_1"
+            app:layout_constraintEnd_toEndOf="@+id/divider_0"
+            app:layout_constraintTop_toTopOf="@+id/divider_1" />
+
+        <TextView
+            android:id="@+id/txt_order_complate"
+            android:layout_width="35dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:background="@drawable/ic_completed"
+            app:layout_constraintBottom_toBottomOf="@+id/divider_1"
+            app:layout_constraintEnd_toEndOf="@+id/divider_0"
+            app:layout_constraintTop_toTopOf="@+id/divider_1" />
+
+        <ImageView
+            android:id="@+id/img_map"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:src="@color/colorE"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_0" />
+
+        <View
+            android:id="@+id/divider_1"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_order_counter"
+            app:layout_constraintTop_toBottomOf="@+id/img_map" />
+
+        <TextView
+            android:id="@+id/txt_table"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:drawableStart="@drawable/ic_user_name"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="----------"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/divider_1"
+            app:layout_constraintStart_toStartOf="@+id/img_map"
+            app:layout_constraintTop_toTopOf="@+id/divider_1" />
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_address"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="----------"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/divider_1"
+            app:layout_constraintEnd_toEndOf="@+id/txt_table"
+            app:layout_constraintStart_toStartOf="@+id/txt_table"
+            app:layout_constraintTop_toBottomOf="@+id/txt_table" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

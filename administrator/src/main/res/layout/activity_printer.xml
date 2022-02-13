@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context="com.kukus.administrator.setting.printer.ActivityPrinter">
+
+    <TextView
+        android:text="Printer Config"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:hint="---"
+        android:background="@drawable/shape_radius_grey_5"
+        />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:text="-------"
+        android:textSize="24sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/colorF"
+        android:background="@color/green"
+        android:text="Save"/>
+
+    <Button
+        android:id="@+id/btnSampleReceipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/colorF"
+        android:background="@color/blue"
+        android:text="test print"/>
+
+    <TextView
+        android:id="@+id/txtRefresh"
+        android:text="Refresh connection"
+        android:textSize="11sp"
+        android:drawableStart="@drawable/ic_history"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/color2"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

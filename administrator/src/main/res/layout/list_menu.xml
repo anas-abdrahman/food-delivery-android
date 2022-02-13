@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/shape_radius_white_border_grey_10"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:transitionName="imageMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gradient_black" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        app:layout_constraintStart_toStartOf="@+id/image"
+        app:layout_constraintTop_toTopOf="@+id/image" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_radius_overlay_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        app:layout_constraintStart_toStartOf="@+id/image"
+        app:layout_constraintTop_toTopOf="@+id/image" />
+
+
+    <TextView
+        android:id="@+id/upload_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:padding="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="show"
+        android:textColor="@color/colorE"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="NASI KUKUS AYAM REMPAH"
+        android:textColor="@color/colorF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:transitionName="titleMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/upload_Image" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="hidangan sedap dan lazat.hidangan sedap dan lazat. hidangan sedap dan lazat."
+        android:textColor="@color/colorE"
+        android:textSize="13sp"
+        android:transitionName="desMenu"
+        app:layout_constraintEnd_toEndOf="@+id/text_title"
+        app:layout_constraintStart_toStartOf="@+id/text_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="AVAILABLE"
+        android:textColor="@color/color2"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider_2"
+        app:layout_constraintTop_toTopOf="@+id/divider_2" />
+
+    <TextView
+        android:id="@+id/text_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:textColor="@color/colorA"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:background="@color/colorE"
+        app:layout_constraintBottom_toBottomOf="@+id/text_limit"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_limit"
+        app:layout_constraintTop_toTopOf="@+id/txt_limit" />
+
+    <TextView
+        android:id="@+id/txt_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="LIMIT"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/color2"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/text_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/colorA"
+        android:layout_marginBottom="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_limit"
+        app:layout_constraintStart_toStartOf="@+id/txt_limit"
+        app:layout_constraintTop_toBottomOf="@+id/txt_limit" />
+
+
+    <View
+        android:id="@+id/divider_3"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:background="@color/colorE"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/text_limit"
+        app:layout_constraintEnd_toStartOf="@+id/label_price"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/txt_limit" />
+
+    <TextView
+        android:id="@+id/label_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="---"
+        android:textColor="@color/color2"
+        android:textSize="11sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/divider_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider_3"
+        app:layout_constraintTop_toTopOf="@+id/divider_3" />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="@color/colorA"
+        android:textSize="11sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/label_price"
+        app:layout_constraintStart_toStartOf="@+id/label_price"
+        app:layout_constraintTop_toBottomOf="@+id/label_price" />
+
+    <View
+        android:id="@+id/divider_4"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:background="@color/colorE"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/text_limit"
+        app:layout_constraintEnd_toStartOf="@+id/label_price1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/label_price"
+        app:layout_constraintTop_toTopOf="@+id/txt_limit" />
+
+    <TextView
+        android:id="@+id/label_price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="---"
+        android:textColor="@color/color2"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider_4"
+        app:layout_constraintTop_toTopOf="@+id/divider_4" />
+
+    <TextView
+        android:id="@+id/text_price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="@color/colorA"
+        android:textSize="11sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/label_price1"
+        app:layout_constraintStart_toStartOf="@+id/label_price1"
+        app:layout_constraintTop_toBottomOf="@+id/label_price1" />
+
+
+</android.support.constraint.ConstraintLayout>
+

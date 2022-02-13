@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#FFFFFF">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="restart"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_radius_green_50"
+        android:textColor="@color/colorF"
+        android:id="@+id/btnRestart"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Printer List"
+        android:id="@+id/txtList"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000" />
+
+    <ListView
+        android:id="@+id/lstReceiveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#ffffff" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kukus.customer">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".intro.ActivitySplash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".reward.ActivityReward"/>
+        <activity android:name=".login.ActivityLogin" />
+        <activity android:name=".checkout.ActivityCheckout" />
+        <activity android:name=".login.ActivityRegister" />
+        <activity android:name=".point.ActivityPoint" />
+        <activity android:name=".wallet.ActivityWallet" />
+        <activity android:name=".order.ActivityOrderDetails" />
+        <activity android:name=".message.ActivityMessage" />
+        <activity android:name=".home.ActivityHome"/>
+        <activity android:name=".order.ActivityListOrder" />
+        <activity android:name=".profile.ActivityProfile" />
+        <activity android:name=".news.ActivityNews" />
+        <activity android:name=".news.ActivityNewsDetails" />
+        <activity android:name=".about.ActivityAbout" />
+        <activity android:name=".setting.ActivitySetting" />
+        <activity android:name=".chat.ActivityChat" />
+        <activity android:name=".login.ActivityVerify" />
+        <activity android:name=".tracking.ActivityTracking" />
+        <activity android:name=".location.ActivityLocation" />
+        <activity android:name=".home.ActivityHomeDetails" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDjsQk8fdU9fO5W_jrwVHYUOl4nxAFE2m4" />
+        <service android:name=".servis.ServiceOrderNotification" />
+    </application>
+
+</manifest>

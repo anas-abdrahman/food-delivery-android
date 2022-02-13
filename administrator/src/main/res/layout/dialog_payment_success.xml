@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="24dp"
+                        android:text="Total Amount"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="16dp"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/success"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_completed_big"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:id="@+id/layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txt_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="EGP 20.0"
+                            android:layout_margin="8dp"
+                            android:textSize="42dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/constraintLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:padding="14dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+
+                            <com.kukus.library.library.ExpandableHeightListView
+                                android:id="@+id/list_order"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <View
+                                android:id="@+id/divider_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="12dp"
+                                android:background="@color/colorE"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/list_order" />
+
+                            <View
+                                android:id="@+id/divider_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/colorE"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/list_order" />
+
+                            <TextView
+                                android:id="@+id/txt_menu_delivery"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:drawablePadding="5dp"
+                                android:text="- Delivery Charges"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toStartOf="@+id/txt_delivery_charge"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/divider_2" />
+
+                            <TextView
+                                android:id="@+id/txt_delivery_charge"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="LE 0"
+                                android:textColor="@color/black"
+                                app:layout_constraintBottom_toBottomOf="@+id/txt_menu_delivery"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/txt_menu_delivery" />
+
+                            <TextView
+                                android:id="@+id/txt_menu_promo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:drawablePadding="5dp"
+                                android:text="- Promotion"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toStartOf="@+id/txt_delivery_charge"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_menu_delivery" />
+
+                            <TextView
+                                android:id="@+id/txt_promo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="LE 0"
+                                android:textColor="@color/black"
+                                app:layout_constraintBottom_toBottomOf="@+id/txt_menu_promo"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/txt_menu_promo" />
+
+                            <TextView
+                                android:id="@+id/txt_menu_wallet"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="5dp"
+                                android:text="- Wallet"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintEnd_toStartOf="@+id/txt_delivery_charge"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_menu_promo" />
+
+                            <TextView
+                                android:id="@+id/txt_wallet"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="LE 0"
+                                android:textColor="@color/black"
+                                app:layout_constraintBottom_toBottomOf="@+id/txt_menu_wallet"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/txt_menu_wallet" />
+
+
+                            <View
+                                android:id="@+id/delivery_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorE"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_menu_wallet" />
+
+                            <TextView
+                                android:id="@+id/label_total"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="- Total"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toStartOf="@+id/txt_total"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/delivery_3" />
+
+
+                            <TextView
+                                android:id="@+id/txt_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="LE 5"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="@+id/label_total"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/label_total" />
+
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="16dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradient_black"
+                            android:textColor="@color/colorF"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/ic_payment_black_24dp"
+                            android:text="Enter Amount"
+                            />
+
+                        <Button
+                            android:id="@+id/btn_pay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_radius_green_5"
+                            android:layout_marginStart="8dp"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:textColor="@color/colorF"
+                            android:text="EGP 20.0"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color title="colorPrimary">#fa2811</color>
+    <color title="colorPrimaryDark">#fa2811</color>-->
+
+    <color name="colorPrimary">#FF4322</color>
+    <color name="colorPrimaryDark">#DF3E21</color>
+    <color name="colorAccent">#FF4322</color>
+
+    <color name="colorRed">#F44336</color>
+    <color name="colorGreen">#32c360</color>
+    <color name="colorGrey">#f5f5f5</color>
+    <color name="colorGreyNew">#e8ebf2</color>
+    <color name="colorBlue">#2E87E6</color>
+
+
+
+    <color name="color9">#999999</color>
+    <color name="color8">#888888</color>
+    <color name="color7">#777777</color>
+    <color name="color6">#666666</color>
+    <color name="color5">#555555</color>
+    <color name="color4">#444444</color>
+    <color name="color2">#444444</color>
+
+    <color name="colorA">#aaaaaa</color>
+    <color name="colorB">#bbbbbb</color>
+    <color name="colorC">#cccccc</color>
+    <color name="colorD">#dddddd</color>
+    <color name="colorE">#eeeeee</color>
+    <color name="colorF">#ffffff</color>
+
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="pf_grey">#262626</color>
+    <color name="pf_grey_light">#999999</color>
+    <color name="pf_white">#ffffff</color>
+
+
+    <color name="yellow">#FFDA00</color>
+    <color name="yellowNew">#2A2B30</color>
+
+    <color name="overlay_dark_50">#80000000</color>
+
+    <color name="grey_40">#999999</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="overlay_light_30">#4DFFFFFF</color>
+    <color name="grey_20">#cccccc</color>
+
+</resources>
